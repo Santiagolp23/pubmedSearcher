@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <style>
+    body {text-align:right; padding-bottom: 0.3em; margin-bottom: 0; -webkit-user-select:none; background-color:#28548c; color: rgb(255, 255, 255); text-rendering: optimizeLegibility;
+    vertical-align:middle; cursor:default;}
+    @media (-webkit-max-device-pixel-ratio: 1.0) {
+        body {
+            font:menu;
+        }
+    }
+    form {padding-bottom:0;margin-bottom:0;margin-right:0; white-space: nowrap}
+    #inputbox { min-width:20.5em;width:100%;; margin-right: .65em;
+    }
+    #submitbutton {}
+    #advButton {font-size:x-small;padding:0; border:0; background:transparent; text-decoration:underline; color:blue;}
+    #advButton:not([disabled]) {cursor:pointer;}
+    #advButton:hover {color:blue;}
+    #advButton:not([disabled]):active {color:red;}
+    #advButton[disabled] {color: gray!important;}
+    table,tr,td {padding:0; border:0; margin:0;font-size:1em;}
+    table {width:100%}
+    
+
+    </style>
+    </head>
+    <body>
+    <table><tr><td><input type="text" placeholder="Enter the name" id=inputbox /></td><td width=1% align=left>
+    <input type="button" value="Search" id="submitbutton" />
+    </td></tr></table>
+    <table><tr><td>
+    <span id="credits">Made by: Santiago López</span></td><td align=right>
+    </td></tr></table>
+    <script src=popup.js></script>
+    </body></html>
