@@ -22,5 +22,6 @@ function doSearchKey(event) {
         var finalLink = "https://pubmed.ncbi.nlm.nih.gov/?term=" + nameOfPerson + "&format=abstract&sort=date&size=100";
         window.open(finalLink);
     }
-    else {}
+    else {
+    }
 }
