@@ -10,9 +10,9 @@
         }
     }
     form {padding-bottom:0;margin-bottom:0;margin-right:0; white-space: nowrap}
-    #inputbox { min-width:20.5em;width:100%;; margin-right: .65em;
+    #inputbox { min-width:21rem;width:100%;; margin-right: .65rem;
     }
-    #submitbutton {}
+    .submitbutton {margin-left: .5rem; margin-top: .1rem;}
     #advButton {font-size:x-small;padding:0; border:0; background:transparent; text-decoration:underline; color:blue;}
     #advButton:not([disabled]) {cursor:pointer;}
     #advButton:hover {color:blue;}
@@ -26,7 +26,8 @@
     </head>
     <body>
     <table><tr><td><input type="text" placeholder="Enter the name" id=inputbox /></td><td width=1% align=left>
-    <input type="button" value="Search" id="submitbutton" />
+    <input type="button" value="Search Pubmed" id="pubmedSubmitButton" class="submitbutton" />
+    <input type="button" value="Search NCBI" id="NCBISubmitButton" class="submitbutton" />
     </td></tr></table>
     <table><tr><td>
     <span id="credits">Made by: Santiago López</span></td><td align=right>

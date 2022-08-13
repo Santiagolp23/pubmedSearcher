@@ -1,4 +1,4 @@
-var search = document.getElementById("submitbutton");
+var search = document.getElementById("pubmedSubmitButton");
 search.addEventListener("click", doSearch);
 
 document.getElementById("inputbox").focus();
@@ -17,10 +17,7 @@ function doSearch() {
 function doSearchKey(event) {
 
     if (event.keyCode == 13) {
-        var nameOfPerson = document.getElementById("inputbox").value;
-        nameOfPerson = nameOfPerson.replace(/\s/g, '+');
-        var finalLink = "https://pubmed.ncbi.nlm.nih.gov/?term=" + nameOfPerson + "&format=abstract&sort=date&size=100";
-        window.open(finalLink);
+        doSearch();
     }
     else {
     }
