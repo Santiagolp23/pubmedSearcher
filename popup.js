@@ -24,7 +24,7 @@ function doPubmedSearch() {
 
 function doNCBISearch() {
     if (nameOfPerson.value !== "") {
-        var finalLink = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + getURLFromName() + "&format=abstract&sort=date&size=100";
+        var finalLink = "https://www.ncbi.nlm.nih.gov/pmc/?term=" + getURLFromName();
         window.open(finalLink);
         pubmedDone = false;
     } else {getURLFromName()}
