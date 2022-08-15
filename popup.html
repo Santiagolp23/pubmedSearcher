@@ -9,26 +9,30 @@
             font:menu;
         }
     }
-    form {padding-bottom:0;margin-bottom:0;margin-right:0; white-space: nowrap}
-    #inputbox { min-width:21rem;width:100%;; margin-right: .65rem;
-    }
-    .submitbutton {margin-left: .5rem; margin-top: .1rem;}
-    #advButton {font-size:x-small;padding:0; border:0; background:transparent; text-decoration:underline; color:blue;}
-    #advButton:not([disabled]) {cursor:pointer;}
-    #advButton:hover {color:blue;}
-    #advButton:not([disabled]):active {color:red;}
-    #advButton[disabled] {color: gray!important;}
-    table,tr,td {padding:0; border:0; margin:0;font-size:1em;}
-    table {width:100%}
-    
 
+    * {
+    margin: 0%;
+    padding: 0%;
+    }
+
+    body {
+        min-height: 70px;
+        max-height: 70px;
+    }
+
+    form {margin:0.7rem; display:flex;}
+    table,tr,td {font-size:.75rem;}
+    #inputbox { min-width:16rem;width:100%;}
+    .submitbutton {margin: 0% 0% 0% .3rem;}
+    table {width:100%}
     </style>
+
     </head>
     <body>
-    <table><tr><td><input type="text" placeholder="Enter the name" id=inputbox /></td><td width=1% align=left>
-    <input type="button" value="Search Pubmed" id="pubmedSubmitButton" class="submitbutton" />
-    <input type="button" value="Search NCBI" id="NCBISubmitButton" class="submitbutton" />
-    </td></tr></table>
+    <form><tr><td><input type="text" placeholder="Enter the name" id=inputbox autocomplete="off" required/></td><td width=1% align=left">
+    <input type="submit" value="Pubmed" id="pubmedSubmitButton" class="submitbutton"/>
+    <input type="submit" value="NCBI" id="NCBISubmitButton" class="submitbutton" />
+    </td></tr></form>
     <table><tr><td>
     <span id="credits">Made by: Santiago López</span></td><td align=right>
     </td></tr></table>
