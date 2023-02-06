@@ -1,11 +1,14 @@
 var pubmedSearch = document.getElementById("pubmedSubmitButton");
 var ncbiSearch = document.getElementById("NCBISubmitButton");
-var nameOfPerson = document.getElementById("inputbox");
+var npiSearch = document.getElementById("NPISubmitButton");
+var nameOfPerson = document.getElementById("nameInputBox");
+var npiNumber = document.getElementById("npiInputBox");
 var pubmedDone = false;
 
 pubmedSearch.addEventListener("click", doPubmedSearch);
 ncbiSearch.addEventListener("click", doNCBISearch);
-document.getElementById("inputbox").focus();
+npiSearch.addEventListener("click", doNPISearch);
+document.getElementById("nameInputBox").focus();
 document.addEventListener("keyup", doSearchKeyHandler);
 
 function getURLFromName() { 
@@ -28,6 +31,11 @@ function doNCBISearch() {
         window.open(finalLink);
         pubmedDone = false;
     } else {getURLFromName()}
+}
+
+function doNPISearch() {
+    var finalLink = "https://npiregistry.cms.hhs.gov/provider-view/" + npiNumber.value;
+    window.open(finalLink);
 }
 
 function doSearch() {

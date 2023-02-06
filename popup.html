@@ -22,19 +22,22 @@
 
     form {margin:0.7rem; display:flex;}
     table,tr,td {font-size:.75rem;}
-    #inputbox { min-width:16rem;width:100%;}
+    .inputbox { min-width:16rem;width:100%;}
     .submitbutton {margin: 0% 0% 0% .3rem;}
     table {width:100%}
     </style>
 
     </head>
     <body>
-    <form><tr><td><input type="text" placeholder="Enter the name" id=inputbox autocomplete="off" required/></td><td width=1% align=left">
-    <input type="submit" value="Pubmed" id="pubmedSubmitButton" class="submitbutton"/>
-    <input type="submit" value="NCBI" id="NCBISubmitButton" class="submitbutton" />
-    </td></tr></form>
-    <table><tr><td>
-    <span id="credits">Made by: Santiago López</span></td><td align=right>
-    </td></tr></table>
+    <form>
+        <input type="text" placeholder="Enter the name" id=nameInputBox class="inputbox" autocomplete="off" required/>
+        <input type="submit" value="Pubmed" id="pubmedSubmitButton" class="submitbutton"/>
+        <input type="submit" value="NCBI" id="NCBISubmitButton" class="submitbutton" />
+    </form> 
+    <form>
+        <input type="text" placeholder="Enter NPI" id=npiInputBox class="inputbox" autocomplete="off" required/>
+        <input type="submit" value="NPI" id="NPISubmitButton" class="submitbutton"/>
+    </form>
+    <span id="credits">Made by: Santiago López</span>
     <script src=popup.js></script>
     </body></html>
